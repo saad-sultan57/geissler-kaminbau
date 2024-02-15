@@ -1,0 +1,359 @@
+/* Google Font Family Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+body{
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Color Variables */
+:root{
+    --grey:#B2B3B3;
+    --white:#ffffff;
+    --red:#99141B;
+}
+/*====Font Family classes===*/
+.big-1{
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 37px;
+}
+
+.big-2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.big-3{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+}
+.big-4{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.big-5{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+}
+.sm-1{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.sm-2{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 36px;
+}
+.sm-3{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.sm-4{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.sm-5{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+}
+.sm-6{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+}
+.sm-7{
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 14px;
+}
+/*====Font Family classes===*/
+
+
+/*=======Color classes=====*/
+.red-c{
+    color: #99141b;
+}
+.red-bg{
+    background: #6C0E13;
+}
+.grey-c{
+    color: var(--grey);
+}
+.a-red{
+    color: rgba(100, 10, 0, 1) !important;
+}
+
+/*==xx=== Color classes=xx==*/
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: var(--white);
+}
+.impressum,.Datenschutz,.Standort,.Moderne,.Standort,.kontakt a:hover{
+    color: rgba(100, 10, 0, 1);
+}
+
+
+/* Utility Classes */
+.custom-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.l-none{
+    list-style: none;
+}
+.s-active{
+    color: white !important;
+    font-weight: 700 !important;
+}
+/* Wrapper */
+.wrapper{
+    position: relative;
+}
+.inner-wrapper{
+        max-width: 1100px;
+        margin: 20px auto;
+        min-height: 100vh;
+        /* background: red;     */
+}
+.inner-wrapper .navbar{
+    width: 100%;
+    /* background: black; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    padding: 80px 30px 50px 0px;
+    height: 150px; 
+}
+
+.inner-wrapper .navbar .nav-links ul{
+    display: flex;
+    gap: 0px 70px;
+    margin-bottom: 0;
+}
+.inner-wrapper .navbar .nav-links ul li{
+    list-style: none;
+    position: relative;
+}
+.inner-wrapper .navbar .nav-links ul >li:before {
+    background: url(../images/border.png);
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 999;
+    width: 28px;
+    height: 90px;
+    transform: scale(0.8);
+    left: -29px;
+    top: -44px;
+}
+.inner-wrapper .navbar .nav-links ul >li:hover:before {
+    background-position-y: -90px;
+}
+.inner-wrapper .navbar .nav-links ul li a{
+    color: #B2B3B3;;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+}
+.inner-wrapper .navbar .nav-links ul li a:hover{
+    color: var(--white);
+}
+
+.inner-wrapper .main{
+    width: 100%;
+    height: calc(100% - 150px);
+    background: gold;
+    display: flex;
+}
+/* Left */
+.inner-wrapper .main .left{
+    width: 25%;
+    min-height: 950px;
+    background: var(--red);
+    color: var(--grey);
+    position: relative;
+}
+.inner-wrapper .main .left .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-wrapper .main .left img{
+    margin-top: -117px;
+    width: 237px !important;
+ 
+}
+.inner-wrapper .main .left .sidebar-text{
+    margin-top: 50px;
+    color: var(--grey);
+    padding: 0px 15px;
+}
+.inner-wrapper .main .left .sidebar-text1{
+    padding: 0px 15px;
+}
+.inner-wrapper .main .left .sidebar-text h4{
+    margin-bottom: 10px;
+}
+.inner-wrapper .main .left .sidebar-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+/* Right */
+.inner-wrapper .main .right{
+    width: 75%;
+    background: var(--white);
+}
+.inner-wrapper .main .right .content-text{
+    padding: 20px;
+}
+.inner-wrapper .main .right .content-text p{
+    margin: 0 0 10px
+}
+.inner-wrapper .main .right .content-text h2{
+    margin-bottom: 30px;
+}
+
+/* Mobile NavBar */
+.mb-nav{
+    width: 100%;
+    background: var(--red);
+    color: var(--grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  
+}
+.mb-nav .menu-item{
+    cursor: pointer;
+}
+.offcanvas-start {
+    background: rgba(153, 20, 27, 0.93);
+    width: 280px !important;
+}
+.offcanvas-body a{
+    color: var(--grey);
+}
+
+/* SCROLL TO TOP */
+#scrollToTop {
+    cursor: pointer;
+    font-size: 0.9em;
+    position: fixed;
+    text-align: center;
+    z-index: 9999;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    background: #ffffff;
+    color: #ffffff;
+    border-radius: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    right: 20px;
+    bottom: 20px;
+    visibility: hidden;
+}
+
+
+.offcanvas-body {
+    /* For WebKit-based browsers (Chrome, Safari) */
+    ::-webkit-scrollbar {
+      width: 10px; /* Set the width of the scrollbar */
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(153, 20, 27, 0.93); /* Set the background color of the thumb to red */
+      border-radius: 5px; /* Optional: Set border-radius for a rounded appearance */
+      border: 2px solid white; /* Optional: Add a border around the thumb */
+    }
+  
+    ::-webkit-scrollbar-track {
+      background-color: var(--red); /* Set the color of the track (the non-draggable part) */
+    }
+  
+    /* For Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: red #f1f1f1; /* Set the background color of the thumb and the color of the track */
+  }
+  .img-box{
+    position: relative;
+  }
+  .img-box .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(240, 120, 120, 0.51);;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+  .img-box:hover .overlay{
+    visibility: visible;
+    transition: 0.5s;
+  }
+  .img-box:hover .overlay .circle{
+    width: 40px;
+    color: var(--white);
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+  }
+
+  /* Galllary */
+  .gallary .subbox{
+    border: 1px solid #cccccc;
+    background: white;
+    box-shadow: 5px 5px 0 #dedede;
+}
+.gallary .subbox .image-area{
+    overflow: hidden;
+    position: relative;
+  }
+  .gallary .subbox .overlay{
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    transform: translateY(200%);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--white);
+}
+
+.gallary .subbox:hover .overlay{
+      transform: translateY(0%);
+      transition: 0.3s;
+      cursor: pointer;
+
+  }
